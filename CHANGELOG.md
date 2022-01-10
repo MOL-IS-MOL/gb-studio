@@ -9,13 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added event to determine if device is running on SGB
+- Added event to determine if device is a GBA
+- Added ability to choose from two keyboard layout options for tracker [@pau-tomas](https://github.com/pau-tomas)
+- Added ability to to set the start playback position in music editor by clicking bar above piano roll [@pau-tomas](https://github.com/pau-tomas)
+
 ### Changed
+
+- Changed if color supported event to return false when game is DMG even if run on color device
+- Changed wording from "Reenable" to "Enable" for toggling events/else [@codyjb](https://github.com/codyjb)
 
 ### Fixed
 
 - Fixed blurry emulator when running web export on desktop Safari [@pau-tomas](https://github.com/pau-tomas)
 - Fix issue where replacing trigger OnLeave script would replace OnEnter [@pau-tomas](https://github.com/pau-tomas)
-- Fix issue replacing math expresion variables in custom events [@pau-tomas](https://github.com/pau-tomas)
+- Fix issue replacing math expression variables in custom events [@pau-tomas](https://github.com/pau-tomas)
+- Fix issue where some events when used in init scripts would cause the script to wait until the scene had faded in before continuing
+- Fix music editor: Instrument name isn't editable  [@pau-tomas](https://github.com/pau-tomas)
+- Fix music editor: Ticks per row field updates aren't reflected when playing the song [@pau-tomas](https://github.com/pau-tomas)
+- Fix music editor: Wave form changes are not updating for instrument preview [@pau-tomas](https://github.com/pau-tomas)
 
 ## [3.0.2]
 
