@@ -74,7 +74,9 @@ const changes: EngineChange[] = [
       "Updates:\n" +
       "   * Update to latest hUGEDriver" +
       "   * Add engine support for text sounds" +
-      "   * Save executing ctxs when saving game data",
+      "   * Save executing ctxs when saving game data" +
+      "   * Improve GBA detection" +
+      "   * Fix scroll jitter seen in top-down scenes",
     modifiedFiles: [
       "include/input.h",
       "include/ui.h",
@@ -82,6 +84,7 @@ const changes: EngineChange[] = [
       "include/vm.i",
       "include/vm_ui.h",
       "lib/hUGEDriver.lib",
+      "src/core/core.c",
       "src/core/input.c",
       "src/core/interrupts.c",
       "src/core/load_save.c",
